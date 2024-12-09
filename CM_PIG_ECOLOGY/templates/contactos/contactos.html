@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+
+<main class="contenedor">
+  <h3 class="centrar-texto">Contacto</h3>
+  <form class="formulario" method="post">
+    {% csrf_token %} {{form}}
+
+    <br />
+    <div class="campo">
+      <input type="submit" value="Enviar" class="boton boton--primario" />
+    </div>
+  </form>
+</main>
+
+{%endblock%}
